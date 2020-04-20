@@ -24,10 +24,10 @@ app.get('/weather', queryValidator , (req, res, next) => {
         .then(res => {
         console.log(res.status, res.statusText)
         //res.send('weather')
-        console.log(req.query)
+        //console.log(req.query)
             return res.json()
     })
-        .then(data => console.log(data) )
+        .then(data => console.log(data))
         .catch(err => console.log(err))
 
 
